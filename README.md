@@ -1,3 +1,7 @@
+**(10/29/19) GUI development starting in new repository!**  Work on transforming BitGlitter from a Python library to an executable with a GUI has begun.  It's been said for a long time on my Discord server that making it accessible to much larger group of people beyond Python devs would help a lot with exposure and getting more momentum, so its a no brainer to make this our next priority.  All future development work will continue here.  The Python library will continue to get all core architecture/performance/protocol updates.  The GUI will be made using PyQt5.  There are also a few planned performance updates to BitGlitter prior to the release of the program.  If you're following this project from the Python library days, be sure to follow this new repo as well.  And as always, come check out our Discord server!
+
+And finally, expect some large changes to happen in this repo in the near future.  The latest version of BitGlitter as a Python library is being used as a starting point to transform it into a GUI.  Excluding the core read/write logic, nearly everything else will be changed prior to release of the executable.  :)
+
 [![Downloads](https://pepy.tech/badge/bitglitter)](https://pepy.tech/project/bitglitter)
 
 **[Discord Server](https://discord.gg/t9uv2pZ)**
