@@ -1,12 +1,15 @@
 from PyQt5.QtWidgets import QAction, QMainWindow, QMenuBar, QPushButton
 from PyQt5.QtGui import QIcon
 
+from os import remove
+
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
         self.title = 'BitGlitter'
+        self.icon_name = 'icon'
         self.top = 100
         self.left = 100
         self.width = 400
@@ -15,7 +18,8 @@ class MainWindow(QMainWindow):
         self.init_window()
 
     def init_window(self):
-        self.setWindowIcon(QIcon('logo.png'))
+        self.setWindowIcon(QIcon(self.icon_name))
+        # remove(self.icon_name)
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
 

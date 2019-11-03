@@ -241,9 +241,9 @@ def render_calibrator(image, block_height, block_width, pixel_width):
 def loop_generator(block_height, block_width, pixel_width, initializer_enabled):
     '''This generator yields the coordinates for each of the blocks used, depending on the geometry of the frame.'''
 
-    for yRange in range(block_height - int(initializer_enabled)):
-        for xRange in range(block_width - int(initializer_enabled)):
-            yield ((pixel_width * int(initializer_enabled)) + (pixel_width * xRange),
-                   (pixel_width * int(initializer_enabled)) + (pixel_width * yRange),
-                   (pixel_width * int(initializer_enabled)) + (pixel_width * (xRange + 1) - 1),
-                   (pixel_width * int(initializer_enabled)) + (pixel_width * (yRange + 1) - 1))
+    for y_range in range(block_height - int(initializer_enabled)):
+        for x_range in range(block_width - int(initializer_enabled)):
+            yield ((pixel_width * int(initializer_enabled)) + (pixel_width * x_range),
+                   (pixel_width * int(initializer_enabled)) + (pixel_width * y_range),
+                   (pixel_width * int(initializer_enabled)) + (pixel_width * (x_range + 1) - 1),
+                   (pixel_width * int(initializer_enabled)) + (pixel_width * (y_range + 1) - 1))
