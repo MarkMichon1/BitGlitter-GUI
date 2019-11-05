@@ -71,6 +71,5 @@ class MainWindow(QMainWindow):
         about_action = QAction('About BitGlitter', self)
         help_menu.addAction(about_action)
 
-
     def create_window_entities(self):
         pass
