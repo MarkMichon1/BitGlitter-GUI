@@ -2,8 +2,8 @@ from PyQt5.QtWidgets import QApplication
 
 import sys
 
-from bitglitter.gui.home import MainWindow
-from bitglitter.gui.icon_generation import IconPaletteManager
+from bitglitter_gui.home import MainWindow
+from bitglitter_gui.icon_generation import IconPaletteManager
 
 
 if __name__ == '__main__':

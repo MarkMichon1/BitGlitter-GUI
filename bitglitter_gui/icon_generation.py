@@ -4,7 +4,7 @@ from datetime import datetime
 from random import choice
 
 
-class IconPaletteManager: #todo all to db eventually
+class IconPaletteManager:
     '''A fun easter egg that generates a random application icon at each startup.  Days of significance will have their
     own custom color themes as well.  For any contributors reading this who would like to add some of their own, you're
     more than welcome!  Be sure the foreground letters can be read easily from the background pixels beforehand.  This
